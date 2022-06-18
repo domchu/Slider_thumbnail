@@ -88,4 +88,12 @@
     cursor: pointer;
     margin: 1px;
   }
+  .point {
+    margin: 5px;
+    cursor: pointer;
+  }
+  .point.active {
+    // background-color: #333333;
+    color: blue;
+  }
 }

@@ -126,4 +126,13 @@
   cursor: pointer;
   margin: 1px;
 }
+
+.thumbnail-container .point {
+  margin: 5px;
+  cursor: pointer;
+}
+
+.thumbnail-container .point.active {
+  color: blue;
+}
 /*# sourceMappingURL=styles.css.map */
