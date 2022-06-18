@@ -8,7 +8,7 @@ let currentPosition = 0;
 let thumbCount = 0;
 
 function setThumbnail() {
-  let thumbImg = document.querySelector(".thumbnail-img");
+  let thumbImg = document.querySelectorAll(".thumbnail-img");
   for (let index = 0; index < thumbImg.length; index++) {
     thumbImg[index].style.opacity = "0.4";
   }
@@ -20,19 +20,19 @@ function setThumbnail() {
   thumbImg[thumbCount - 1].style.opacity = "1";
 }
 function activateSlider() {
-  let point = document.querySelector(".point");
+  let point = document.querySelectorAll(".point");
   for (let index = 0; index < sliders.length; index++) {
     sliders[index].style.transform = `translateX(-${currentPosition}00%)`;
-    point[index].classList.remove(active);
+    point[index].classList.remove("active");
   }
-  point[currentPosition].classList.toggle(active);
+  point[currentPosition].classList.toggle("active");
   currentPosition++;
   if (currentPosition > sliders.length - 1) {
     currentPosition = 0;
   }
-  thumbnail();
+  setThumbnail();
 }
-// setInterval(activateSlider, 7000);
+setInterval(activateSlider, 7000);
 
 // the left button
 leftBtn.addEventListener("click", () => {
@@ -59,7 +59,7 @@ rightBtn.addEventListener("click", () => {
 });
 
 // the dots
-sliders.forEach(() => {
+sliders.forEach((s) => {
   dot.innerHTML += `<i class="fas fa-dot-circle point"></i>`;
 });
 

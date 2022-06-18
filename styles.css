@@ -37,6 +37,8 @@
   width: 1200px;
   height: 600px;
   position: relative;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .page-container .slider-container {
