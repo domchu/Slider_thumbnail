@@ -28,19 +28,19 @@
 
 .page-container .slider-image {
   height: 100%;
-  width: 1000px;
+  width: 1200px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .page-container .slider {
-  width: 1000px;
+  width: 1200px;
   height: 600px;
   position: relative;
 }
 
 .page-container .slider-container {
-  width: 1000px;
+  width: 1200px;
   height: 600px;
   position: relative;
   display: -webkit-box;
@@ -99,5 +99,31 @@
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-right: 1rem;
+}
+
+.page-container .dot {
+  position: absolute;
+  bottom: 30px;
+  left: 46%;
+}
+
+.thumbnail-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 50px;
+}
+
+.thumbnail-container .thumbnail-image {
+  width: 200px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.thumbnail-container .thumbnail {
+  cursor: pointer;
+  margin: 1px;
 }
 /*# sourceMappingURL=styles.css.map */
