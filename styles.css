@@ -4,9 +4,13 @@
   padding: 0;
   list-style-type: none;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
+  font-family: "lato", sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.fas {
+  margin: 3px;
 }
 
 .page-container {
@@ -108,6 +112,7 @@
   bottom: 30px;
   left: 46%;
   z-index: 10;
+  color: #e61b1b;
 }
 
 .thumbnail-container {
@@ -131,14 +136,14 @@
 }
 
 .thumbnail-container .point {
-  margin: 5px;
   cursor: pointer;
-  color: #e61b1b;
   position: absolute;
   z-index: 10;
 }
 
-.thumbnail-container .point.active {
-  color: blue;
+.thumbnail-container .point,
+.thumbnail-container .active {
+  color: blue !important;
+  font-size: 40px;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -5,12 +5,14 @@
   padding: 0;
   list-style-type: none;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
+  font-family: "lato", sans-serif;
   box-sizing: border-box;
+}
+.fas {
+  margin: 3px;
 }
 .page-container {
   width: 100%;
-  //   height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,6 +76,7 @@
     bottom: 30px;
     left: 46%;
     z-index: 10;
+    color: #e61b1b;
   }
 }
 // the thumbnail section
@@ -92,14 +95,14 @@
     margin: 1px;
   }
   .point {
-    margin: 5px;
     cursor: pointer;
-    color: #e61b1b;
+
     position: absolute;
     z-index: 10;
   }
-  .point.active {
-    // background-color: #333333;
-    color: blue;
+  .point,
+  .active {
+    color: blue !important;
+    font-size: 40px;
   }
 }

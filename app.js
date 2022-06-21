@@ -3,12 +3,12 @@ let dot = document.querySelector(".dot");
 let leftBtn = document.querySelector(".left");
 let rightBtn = document.querySelector(".right");
 let thumbnail = document.querySelectorAll(".thumbnail");
+let thumbImg = document.querySelectorAll(".thumbnail-image");
 
 let currentPosition = 0;
 let thumbCount = 0;
 
 function setThumbnail() {
-  let thumbImg = document.querySelectorAll(".thumbnail-img");
   for (let index = 0; index < thumbImg.length; index++) {
     thumbImg[index].style.opacity = "0.4";
   }
@@ -26,13 +26,13 @@ function activateSlider() {
     point[index].classList.remove("active");
   }
   point[currentPosition].classList.toggle("active");
-  currentPosition++;
+  currentPosition += 1;
   if (currentPosition > sliders.length - 1) {
     currentPosition = 0;
   }
   setThumbnail();
 }
-setInterval(activateSlider, 3000);
+setInterval(activateSlider, 7000);
 
 // the left button
 leftBtn.addEventListener("click", () => {
@@ -65,7 +65,7 @@ sliders.forEach((s) => {
 
 for (let index = 0; index < thumbnail.length; index++) {
   thumbnail[index].addEventListener("click", () => {
-    currentPosition = index;
+    thumbnail = index;
     activateSlider();
     thumbCount = index;
     setThumbnail();
