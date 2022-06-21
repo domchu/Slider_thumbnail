@@ -107,6 +107,7 @@
   position: absolute;
   bottom: 30px;
   left: 46%;
+  z-index: 10;
 }
 
 .thumbnail-container {
@@ -132,6 +133,9 @@
 .thumbnail-container .point {
   margin: 5px;
   cursor: pointer;
+  color: #e61b1b;
+  position: absolute;
+  z-index: 10;
 }
 
 .thumbnail-container .point.active {

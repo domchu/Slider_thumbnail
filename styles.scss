@@ -27,6 +27,7 @@
     position: relative;
     transition: 1s;
   }
+
   .slider-container {
     width: 1200px;
     height: 600px;
@@ -72,6 +73,7 @@
     position: absolute;
     bottom: 30px;
     left: 46%;
+    z-index: 10;
   }
 }
 // the thumbnail section
@@ -92,6 +94,9 @@
   .point {
     margin: 5px;
     cursor: pointer;
+    color: #e61b1b;
+    position: absolute;
+    z-index: 10;
   }
   .point.active {
     // background-color: #333333;

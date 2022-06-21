@@ -1,5 +1,5 @@
 let sliders = document.querySelectorAll(".slider");
-let dot = document.querySelector(".dots");
+let dot = document.querySelector(".dot");
 let leftBtn = document.querySelector(".left");
 let rightBtn = document.querySelector(".right");
 let thumbnail = document.querySelectorAll(".thumbnail");
@@ -32,11 +32,11 @@ function activateSlider() {
   }
   setThumbnail();
 }
-setInterval(activateSlider, 7000);
+setInterval(activateSlider, 3000);
 
 // the left button
 leftBtn.addEventListener("click", () => {
-  currentPosition--;
+  currentPosition = currentPosition - 1;
   if (currentPosition < 1) {
     currentPosition = sliders.length;
   }
@@ -48,7 +48,7 @@ leftBtn.addEventListener("click", () => {
 
 // the right button
 rightBtn.addEventListener("click", () => {
-  currentPosition++;
+  currentPosition += 1;
   if (currentPosition > sliders.length - 1) {
     currentPosition = 0;
   }
